@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="div1"><H1 id="build">BUILD YOUR RESUME</H1>
+
+        <form id="form"cellpadding="6"cellspacing="6"height="80"width="80">
+            
+  <fieldset>
+    <legend><h1>Profile Picture</h1></legend>
+    <diV CLASS="input-group">
+        <label for="profilepic">Upload ProfilePic:</label>
+        <input type="file" id="profilepic" name="profilepic" accept="image/*" required>
+    </diV>
+   </fieldset>
+            <fieldset id="personal">
+                <br>
+               <legend><h1>PERSONAL INFORMATION</h1></legend>
+                <br>
+                <label id="Name">FullNAME</label>
+                <input type="text" required autocomplete="no" id="name">
+                <label id="do">DATE OF BIRTH:</label>
+                <input type="date" value="date of birth" name="do" required autocomplete="no" id="dob">
+                <br>
+                <label id="NUMBERS"> PERMANANT ADDRESS:</label>
+            <INPUT TYPE="TEXT"NAME="NUMBERS" placeholder="STREET ADDRESS" id="address"><BR/>
+                <br><INPUT TYPE="TEXT" NAME="NUMBERS"PLACEHOLDER="CITY" id="city">
+                    <br>
+                    <label id="AP">PHONE:</label>
+            <input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" name="AP" required autocomplete
+            ="no" placeholder="xxxx-xxxx-xxx" id="phone">
+        <br>
+            <BR>
+                <label>GENDER SELECT:</label>
+                <LABEL FOR="gender"> </LABEL>
+                <select id="gender" name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+                        <br>
+                        <br>
+                        <label for ="NATIONALITY">NATIONALITY:</label>
+                        <br>
+                <input type="text" name="NATIONALITY" required autocomplete="no" id="nationality">
+        
+            <br>
+            <label for="religion">RELIGION</label>
+            <input  type="text"name="religion" id="religion" required autocomplete="no">
+           
+                <br>
+            <label for="placebirth">PLACE Of BIRTH</label>
+          <input type="text"name="placebirth" id="pob" required autocomplete="no">
+          <br>
+            <label>EMAIL</label>
+            <input type="email" id="email" name="email" required>
+          
+        </fieldset>
+        <br>
+            <fieldset>
+                
+            <legend><h1>EDUCATION</h1></legend>
+        <BR>
+            <label for="education">ACADEMIC QUALIFICATION:</label>
+        
+        <br/>
+        <textarea name="education1" colspan="20"rowspan="4" id="education1"></textarea>
+        <br>
+        <textarea name="education2" colspan="20"rowspan="4" id="education2"></textarea>
+        <br>
+        <textarea name="education3" colspan="20"rowspan="4" id="education3"></textarea>
+
+            </fieldset>
+        <br>
+            <fieldset>
+               <legend><H1>SKILLS</H1></legend>
+                <label>SKILLS</label>
+                <textarea name="skills1" colspan="20"rowspan="4" id="skills1"></textarea>
+                <br>
+                <textarea name="skills2" colspan="20"rowspan="4" id="skills2"></textarea>
+                <br>
+                <textarea name="skills3" colspan="20"rowspan="4" id="skills3"></textarea>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><H1>WORK EXPERIENCE</H1></legend>
+                <label>EXPERIENCE</label>
+                <textarea name="experience1" colspan="20"rowspan="4" id="experience1"></textarea>
+                <br>
+                <textarea name="experience2" colspan="20"rowspan="4" id="experience2"></textarea>
+                 <br>
+                 <textarea name="experience3" colspan="20"rowspan="4" id="experience3"></textarea>
+               <br>
+            </fieldset>
+            <br>
+            <br>
+            <a href="../dynamicresume/dynamic.html"><button id="btn" type="submit">GENERATE RESUME</button></a>
+        </form>
+        </div>
+        
+         <script src="formsscript.js"></script>
+         <script src="../dynamicresume/dynamic.html"></script>
+         
+        </body>
+        </html>
