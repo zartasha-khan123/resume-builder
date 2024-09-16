@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
         document.getElementById('profilepicpreview').src = profilepic;
     }
     const username = name ? name.toLowerCase().replace(/\s+/g, '') : 'user';
-    const baseUrl = 'https://vercel.com/zartash-imrans-projects/resume-builder';
+    const baseUrl = 'https://resume-builder-zartashimran.vercel.app';
     const uniqueResumeUrl = `${baseUrl}/ ${username}`;
     //set resume link in the  Dom
     const resumeLink = document.getElementById('resumeLink');
