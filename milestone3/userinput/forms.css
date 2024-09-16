@@ -1,120 +1,161 @@
-*{
-    padding:0px;
-    margin:0px;
-box-sizing: border-box;
+
+
+
+ * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 
-.div1{
+.div1 {
     background-color: rgb(146, 126, 165);
     box-shadow: 0 0 10px rgba(24, 219, 24, 0.856);
 }
 
-#build{
-        text-align: center;
-        margin-bottom: 25px;
-        color: beige;
-        transition: transform 0.5s ease ;
-        display:block;
-}
-#build:hover{
-    transform:rotate(360deg);
+#build {
+    text-align: center;
+    margin-bottom: 25px;
+    color: beige;
+    transition: transform 0.5s ease;
+    display: block;
 }
 
-#form{
-    height:100%;
-    width:50%;
+#build:hover {
+    transform: rotate(360deg);
+}
+
+#form {
+    height: 100%;
+    width: 50%;
     background-color: rgb(170, 214, 200);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    left: 22%;
-    right:20%;
-    padding:20px;
+    left: 25%;
+    right: 25%;
+    padding: 20px;
     font-weight: 900;
     border-style: groove;
     box-shadow: 0 0 10px rgba(128, 230, 133, 0.856);
 }
 
-label{
-    display:block;
+label {
+    display: block;
     margin-bottom: 8px;
     text-decoration: underline;
-    
 }
-#personal{
+
+#personal {
     margin-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
-select{
-        font-size: 20px;
-        background-color:antiquewhite;
+select {
+    font-size: 20px;
+    background-color: antiquewhite;
 }
-input , textarea{
 
-    height:30px;
-    width: 0 auto;
+input, textarea {
+    height: 30px;
+    width: 100%;
     border-radius: 5px;
     font-size: 15px;
     background-color: antiquewhite;
 }
-fieldset{
-    background-color:#f9f9f9;
-    border:2px solid #4CAF50;
+
+fieldset {
+    background-color: #f9f9f9;
+    border: 2px solid #4CAF50;
     padding: 20px;
     margin-bottom: 20px;
 }
-legend{
+
+legend {
     font-size: 1.2em;
     padding: 0 10px;
     font-weight: bold;
 }
 
-input:focus,select:focus,textarea:focus{
-      border-color: #4CAF50;
-      outline: none;
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
 
-}
-input:hover{
+input:hover, textarea:hover {
     background-color: rgb(151, 138, 138);
-    color:aliceblue;
+    color: aliceblue;
 }
-textarea:hover{
-    background-color: rgb(151, 138, 138);
-    color:aliceblue;
-}
-button{
 
-    display:block;
-    width:100%;
-    padding:10px;
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
     background-color: rgba(221, 162, 34, 0.589);
-    transition: background-color 0.3 ease,transform 0.3 ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     border: none;
     border-radius: 18px;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: 900;
     font-size: 20px;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(124, 131, 146);
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
-#profilepic{
+#profilepic {
     font-size: 16px;
     padding-bottom: 20px;
 }
 
-/* #outputResume
-{
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 25px;
-    height:900px;
-    padding: 20px;
-    border: 2px solid rgb(246, 250, 246);
-    background-color: rgb(130, 175, 124);
-    border-radius: 8px;
-    box-shadow: 3px 5px 12px rgb(238, 23, 23);
-} */
+/* Media Queries */
+
+
+@media (max-width: 800px) {
+    #form {
+        width: 70%;
+        left: 15%;
+        right: 15%;
+    }
+
+    select, input, textarea, button {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #form {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+
+    select, input, textarea, button {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    #form {
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    select, input, textarea, button {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
