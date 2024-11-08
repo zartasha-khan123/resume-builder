@@ -32,9 +32,6 @@ document.getElementById('pobform')!.textContent = pob;
 document.getElementById('cityform')!.textContent = citydetails;
 document.getElementById('nationalityform')!.textContent = nationality;
 document.getElementById('religionform')!.textContent = religion;
-//document.getElementById('educationform')!.textContent = education;
-//document.getElementById('skillform')!.textContent = skill;
-//document.getElementById('experienceform')!.textContent = experience;
 document.getElementById('detailseduform1')!.textContent = detailsedu1;
 document.getElementById('detailseduform2')!.textContent = detailsedu2;
 document.getElementById('detailseduform3')!.textContent = detailsedu3;
@@ -76,10 +73,17 @@ document.getElementById('copyLinkBtn')!.addEventListener('click', ()=>{
 
 })
 
-document.getElementById('editBtn')!.addEventListener('click', ()=>{
 
-    window.history.back();
+document.getElementById('editBtn')!.addEventListener('click', () => {
+   
+    if (window.history.length > 1) {
+        window.history.back();  
+    } else {
+        console.log('No previous page, redirecting to home...');
+        window.location.href = '/'; 
+    }
 });
+
 
 
 document.getElementById('printBtn')!.addEventListener('click', ()=>{

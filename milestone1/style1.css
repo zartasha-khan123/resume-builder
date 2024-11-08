@@ -1,121 +1,149 @@
-*{
-    padding:0px;
-    margin:0px;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-
-
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:rgb(192, 179, 179);
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
 
-  }
-  
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #333;
+}
+
+.header-info h1 {
+  font-size: 2.5em;
+  color: #222;
+  margin-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header-info h1:hover {
+  color: #706a5a;
+  font-size: 2.7em;
+}
+
+.role {
+  font-size: 1em;
+  font-weight: bold;
+  color: #555;
+}
+
+.header-info p {
+  font-size: 0.9em;
+  color: black;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 8px 0;
+  color: #555;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(118, 141, 141);
+  font-weight: 900;
+  border: 2px solid green;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(124, 131, 146);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
   }
-  
+
   header {
-    text-align: center;
-    background-color: #86999e;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
-  
+
   .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 10px 0;
-  }
-  
-  h1 {
-    background-color: rgb(51, 190, 190);
-    color:white;
-    margin-bottom: 5px;
-  }
-  p{
-    font-weight: 800;
-    color: rgb(16, 17, 15);
-  }
-  h2 {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-    background-color: #3edbdb;
-    display: inline-block;
-  }
-  
-  section {
-
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  .button-container {
-    text-align: center;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-
-  }
-  
-  button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: aqua;
-    font-weight: 900;
-    border:2px solid green;
-    border-radius: 6px;
-    transition: background-color 0.3 ease,transform 0.3 ease;
-  }
-  button:hover{
-    background-color: rgb(124, 131, 146);
-    transform:scale(1.05);
-  }
-
-  
-  @media (max-width: 600px) {
-    .container {
-      padding: 10px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-
-    button {
-      width: 100%;
       margin-bottom: 10px;
-    
-    }
-  }
- /* .hidden{
-    display: none;
-  }
-*/
-  #skillsbtn{
-    display:block;
+      width: 80px; 
+      height: 80px;
   }
 
-  #educationbtn{
-    display: block;
+  .header-info h1 {
+      font-size: 2em; 
   }
-  
-  #experiencebtn{
-    display:block;
+
+  .header-info p {
+      font-size: 0.85em;
   }
+
+  section h2 {
+      font-size: 1.3em;
+  }
+
+  .button-container {
+      flex-direction: column; 
+  }
+
+  button {
+      width: 100%; 
+      font-size: 14px;
+  }
+}

@@ -24,7 +24,6 @@ const detailsexp2 = document.getElementById('experience2') as HTMLTextAreaElemen
 const detailsexp3 = document.getElementById('experience3') as HTMLTextAreaElement;
 const citydetails = document.getElementById('city') as HTMLInputElement;
 const address = document.getElementById('address') as HTMLInputElement;
-//const experience = document.getElementById('experience') as HTMLTextAreaElement;
 const profilepic= document.getElementById('profilepic') as HTMLInputElement;
 
 
@@ -33,7 +32,7 @@ window.open('../dynamicresume/dynamic.html');
 
 localStorage.setItem('nameform', names.value);
 localStorage.setItem('emailform', email.value);
-localStorage.setItem('phonefrom', phone.value);
+localStorage.setItem('phoneform', phone.value);
 localStorage.setItem('detailseduform1', detailsedu1.value);
 localStorage.setItem('detailseduform2', detailsedu2.value);
 localStorage.setItem('detailseduform3', detailsedu3.value);

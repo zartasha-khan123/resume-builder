@@ -22,12 +22,11 @@ forms.addEventListener('submit', (e) => {
     const detailsexp3 = document.getElementById('experience3');
     const citydetails = document.getElementById('city');
     const address = document.getElementById('address');
-    //const experience = document.getElementById('experience') as HTMLTextAreaElement;
     const profilepic = document.getElementById('profilepic');
     window.open('../dynamicresume/dynamic.html');
     localStorage.setItem('nameform', names.value);
     localStorage.setItem('emailform', email.value);
-    localStorage.setItem('phonefrom', phone.value);
+    localStorage.setItem('phoneform', phone.value);
     localStorage.setItem('detailseduform1', detailsedu1.value);
     localStorage.setItem('detailseduform2', detailsedu2.value);
     localStorage.setItem('detailseduform3', detailsedu3.value);

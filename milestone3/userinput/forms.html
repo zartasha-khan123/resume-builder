@@ -3,108 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume Builder</title>
     <link rel="stylesheet" href="forms.css">
 </head>
 <body>
-    <div class="div1"><H1 id="build">BUILD YOUR RESUME</H1>
+    <div class="container">
+        <h1 id="build">Build Your Resume</h1>
 
-        <form id="form"cellpadding="6"cellspacing="6"height="80"width="80">
-            
-  <fieldset>
-    <legend><h1>Profile Picture</h1></legend>
-    <diV CLASS="input-group">
-        <label for="profilepic">Upload ProfilePic:</label>
-        <input type="file" id="profilepic" name="profilepic" accept="image/*" required>
-    </diV>
-   </fieldset>
+        <form id="form">
+            <fieldset>
+                <legend>Profile Picture</legend>
+                <div class="input-group">
+                    <label for="profilepic">Upload Profile Picture:</label>
+                    <input type="file" id="profilepic" name="profilepic" accept="image/*" required>
+                </div>
+            </fieldset>
+
             <fieldset id="personal">
-                <br>
-               <legend><h1>PERSONAL INFORMATION</h1></legend>
-                <br>
-                <label id="Name">FullNAME</label>
-                <input type="text" required autocomplete="no" id="name">
-                <label id="do">DATE OF BIRTH:</label>
-                <input type="date" value="date of birth" name="do" required autocomplete="no" id="dob">
-                <br>
-                <label id="NUMBERS"> PERMANANT ADDRESS:</label>
-            <INPUT TYPE="TEXT"NAME="NUMBERS" placeholder="STREET ADDRESS" id="address"><BR/>
-                <br><INPUT TYPE="TEXT" NAME="NUMBERS"PLACEHOLDER="CITY" id="city">
-                    <br>
-                    <label id="AP">PHONE:</label>
-            <input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" name="AP" required autocomplete
-            ="no" placeholder="xxxx-xxxx-xxx" id="phone">
-        <br>
-            <BR>
-                <label>GENDER SELECT:</label>
-                <LABEL FOR="gender"> </LABEL>
-                <select id="gender" name="gender">
-                    <option value="male">male</option>
-                    <option value="female">female</option>
-                </select>
-                        <br>
-                        <br>
-                        <label for ="NATIONALITY">NATIONALITY:</label>
-                        <br>
-                <input type="text" name="NATIONALITY" required autocomplete="no" id="nationality">
-        
-            <br>
-            <label for="religion">RELIGION</label>
-            <input  type="text"name="religion" id="religion" required autocomplete="no">
-           
-                <br>
-            <label for="placebirth">PLACE Of BIRTH</label>
-          <input type="text"name="placebirth" id="pob" required autocomplete="no">
-          <br>
-            <label>EMAIL</label>
-            <input type="email" id="email" name="email" required>
-          
-        </fieldset>
-        <br>
-            <fieldset>
-                
-            <legend><h1>EDUCATION</h1></legend>
-        <BR>
-            <label for="education">ACADEMIC QUALIFICATION:</label>
-        
-        <br/>
-        <textarea name="education1" colspan="20"rowspan="4" id="education1"></textarea>
-        <br>
-        <textarea name="education2" colspan="20"rowspan="4" id="education2"></textarea>
-        <br>
-        <textarea name="education3" colspan="20"rowspan="4" id="education3"></textarea>
+                <legend>Personal Information</legend>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
 
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Permanent Address</label>
+                    <input type="text" id="address" placeholder="Street Address">
+                    <input type="text" id="city" placeholder="City">
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" placeholder="xxxx-xxxx-xxx" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="nationality">Nationality</label>
+                    <input type="text" id="nationality" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="religion">Religion</label>
+                    <input type="text" id="religion" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="pob">Place of Birth</label>
+                    <input type="text" id="pob" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
             </fieldset>
-        <br>
+
             <fieldset>
-               <legend><H1>SKILLS</H1></legend>
-                <label>SKILLS</label>
-                <textarea name="skills1" colspan="20"rowspan="4" id="skills1"></textarea>
-                <br>
-                <textarea name="skills2" colspan="20"rowspan="4" id="skills2"></textarea>
-                <br>
-                <textarea name="skills3" colspan="20"rowspan="4" id="skills3"></textarea>
-                <br>
+                <legend>Education</legend>
+                <div class="input-group">
+                    <label for="education1">Academic Qualification</label>
+                    <textarea id="education1"></textarea>
+                    <textarea id="education2"></textarea>
+                    <textarea id="education3"></textarea>
+                </div>
             </fieldset>
-            <br>
+
             <fieldset>
-                <legend><H1>WORK EXPERIENCE</H1></legend>
-                <label>EXPERIENCE</label>
-                <textarea name="experience1" colspan="20"rowspan="4" id="experience1"></textarea>
-                <br>
-                <textarea name="experience2" colspan="20"rowspan="4" id="experience2"></textarea>
-                 <br>
-                 <textarea name="experience3" colspan="20"rowspan="4" id="experience3"></textarea>
-               <br>
+                <legend>Skills</legend>
+                <div class="input-group">
+                    <label>Skills</label>
+                    <textarea id="skills1"></textarea>
+                    <textarea id="skills2"></textarea>
+                    <textarea id="skills3"></textarea>
+                </div>
             </fieldset>
-            <br>
-            <br>
-            <a href="../dynamicresume/dynamic.html"><button id="btn" type="submit">GENERATE RESUME</button></a>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <div class="input-group">
+                    <label>Experience</label>
+                    <textarea id="experience1"></textarea>
+                    <textarea id="experience2"></textarea>
+                    <textarea id="experience3"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="button-container">
+                <a href="../dynamicresume/dynamic.html"><button id="btn" type="submit">Generate Resume</button></a>
+            </div>
         </form>
-        </div>
-        
-         <script src="formsscript.js"></script>
-         <script src="../dynamicresume/dynamic.html"></script>
-         
-        </body>
-        </html>
+    </div>
+
+    <script src="formsscript.js"></script>
+    <script src="../dynamicresume/dynamic.html"></script>
+</body>
+</html>

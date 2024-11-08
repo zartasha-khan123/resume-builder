@@ -1,161 +1,105 @@
-
-
-
- * {
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-
-.div1 {
-    background-color: rgb(146, 126, 165);
-    box-shadow: 0 0 10px rgba(24, 219, 24, 0.856);
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
 }
 
-#build {
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: black; 
+    color: #f4f4f9; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1#build {
     text-align: center;
-    margin-bottom: 25px;
-    color: beige;
-    transition: transform 0.5s ease;
-    display: block;
-}
-
-#build:hover {
-    transform: rotate(360deg);
-}
-
-#form {
-    height: 100%;
-    width: 50%;
-    background-color: rgb(170, 214, 200);
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: 25%;
-    right: 25%;
-    padding: 20px;
-    font-weight: 900;
-    border-style: groove;
-    box-shadow: 0 0 10px rgba(128, 230, 133, 0.856);
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    text-decoration: underline;
-}
-
-#personal {
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-select {
-    font-size: 20px;
-    background-color: antiquewhite;
-}
-
-input, textarea {
-    height: 30px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: antiquewhite;
-}
-
-fieldset {
-    background-color: #f9f9f9;
-    border: 2px solid #4CAF50;
-    padding: 20px;
+    color: #ffd700; 
     margin-bottom: 20px;
 }
 
-legend {
+form fieldset {
+    border: 1px solid #ffd700; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form legend {
     font-size: 1.2em;
+    color: #ffd700; 
     padding: 0 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-group label {
     font-weight: bold;
+    color: #ffd700; 
+    margin-bottom: 5px;
 }
 
-input:focus, select:focus, textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
+.input-group input,
+.input-group textarea,
+.input-group select {
+    padding: 10px;
+    border: 1px solid #ffd700; 
+    background-color:oldlace; 
+    color: black; 
+    border-radius: 4px;
+    font-size: 1em;
 }
 
-input:hover, textarea:hover {
-    background-color: rgb(151, 138, 138);
-    color: aliceblue;
+textarea {
+    resize: vertical;
+    min-height: 50px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(221, 162, 34, 0.589);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #ffd700; 
+    color: #1a1a1a; 
+    padding: 10px 20px;
+    font-size: 1em;
     border: none;
-    border-radius: 18px;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: 900;
-    font-size: 20px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: rgb(124, 131, 146);
-    transform: scale(1.05);
+    background-color: #e5c100;
 }
-
-#profilepic {
-    font-size: 16px;
-    padding-bottom: 20px;
-}
-
-/* Media Queries */
-
-
-@media (max-width: 800px) {
-    #form {
-        width: 70%;
-        left: 15%;
-        right: 15%;
-    }
-
-    select, input, textarea, button {
-        font-size: 18px;
-    }
-}
-
 
 @media (max-width: 600px) {
-    #form {
-        width: 90%;
-        left: 5%;
-        right: 5%;
-    }
-
-    select, input, textarea, button {
-        font-size: 16px;
+    .input-group {
+        flex-direction: column;
     }
 
     button {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
-
-
-@media (max-width: 400px) {
-    #form {
-        width: 95%;
-        left: 2.5%;
-        right: 2.5%;
-    }
-
-    select, input, textarea, button {
-        font-size: 14px;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 6px;
+        width: 100%;
     }
 }

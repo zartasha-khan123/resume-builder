@@ -1,195 +1,176 @@
-
-* {
-  padding: 0px;
-  margin: 0px;
+*{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(192, 179, 179);
+  background-color: #e9ecef;
+  color: #333;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 50rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
+  border-radius: .625rem;
 }
 
 header {
   text-align: center;
-  background-color: #86999e;
+  background-color: #506163;
+  color: white;
+  padding: 1.25rem;
   position: relative;
+  border-radius: .5rem .5rem 0 0;
+  margin: 1.25rem 0;
 }
 
 #profilepicpreview {
-  width: 280px;
-  height: 300px;
-  object-fit: contain;
-  border-radius: 40%;
-  margin: 10px 0;
+  width: 9.375rem;
+  height: 9.375rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: .1875rem solid #333;
   position: absolute;
-  right: 20px;
-  top: 80px;
+  right: 1.25rem;
+  top: 1.875rem;
+  transition: transform 0.3s ease;
+}
+
+#profilepicpreview:hover {
+  transform: scale(1.05);
 }
 
 h1 {
-  background-color: rgb(51, 190, 190);
-  color: white;
-  margin-bottom: 5px;
-  font-size: 50px;
+  font-size: 2.5em;
+  margin-bottom: .625rem;
+  letter-spacing: .075rem;
+  color: black;
 }
 
 h3 {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: left;
-  text-decoration-style: solid;
-}
-
-p {
-  font-weight: 800;
-  color: rgb(16, 17, 15);
+  font-size: 1.2em;
+  font-weight: normal;
+  color: whitesmoke;
+  margin: 15px;
+  letter-spacing: .075rem;
+  margin-bottom: 0.625rem;
 }
 
 h2 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-  background-color: #3edbdb;
+  font-size: 1.5em;
+  color: #33494b;
+  margin-bottom: .625rem;
+  border-bottom: .125rem solid #006d77;
   display: inline-block;
+  padding-bottom: .3125rem;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  padding: .625rem 0;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: .5rem;
+  color: #555;
+}
+
+p {
+  font-weight: bold;
+  color: rgb(14, 7, 7);
 }
 
 .button-container {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.25rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 #BtnDiv {
-  display: block;
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   align-items: center;
-  border: 4px solid #00796b;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color:rosybrown ;
+  flex-wrap: wrap;
+  gap: .625rem;
+  border: .125rem solid #006d77;
+  border-radius: .5rem;
+  padding: .625rem;
+  background-color: #edf2f4;
 }
 
 .btn {
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: 600;
-  padding: 10px 20px;
-  margin: 10px;
+  padding: .625rem .9375rem;
   border: none;
-  border-radius: 5px;
+  border-radius: .3125rem;
   cursor: pointer;
-  background-color: #fff;
-  color: #333;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #384446;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-  background-color: rgb(18, 54, 42);
+  background-color: #004e5e;
+  transform: scale(1.05);
 }
 
-#BtnDiv .btn {
-  margin: 10px;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: lightseagreen;
-  color: white;
-  text-align: center;
-}
-
-#BtnDiv .btn:hover {
-  background-color: #00796b;
-}
-
-
-
-
-@media print {
-  #BtnDiv {
-      display: none;
-  }
-}
-
-
-/*media query */
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   #profilepicpreview {
-      width: 200px;
-      height: 220px;
-      right: 10px;
-      top: 70px;
+      width: 7.5rem;
+      height: 7.5rem;
+      right: .625rem;
+      top: 1.25rem;
   }
 
   h1 {
-      font-size: 40px;
+      font-size: 2em;
   }
 
   h3 {
-      font-size: 18px;
+      font-size: 1em;
   }
 
   .container {
-      padding: 15px;
+      padding: .9375rem;
   }
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .container {
-      padding: 10px;
+      padding: .625rem;
   }
 
   h1 {
-      font-size: 24px;
+      font-size: 1.8em;
   }
 
   button {
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: .625rem;
   }
 
   header {
-      flex-direction: column;
+      padding: .9375rem;
       text-align: center;
   }
 
   #profilepicpreview {
-      width: 150px;
-      height: 180px;
+      width: 6.25rem;
+      height: 6.25rem;
       position: static;
-      margin: 10px auto;
-  }
-
-  .button-container {
-      margin-top: 20px;
+      margin: .625rem auto;
   }
 
   #BtnDiv {
@@ -198,19 +179,59 @@ li {
   }
 }
 
-
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   h1 {
-      font-size: 20px;
+      font-size: 1.5em;
   }
 
   #profilepicpreview {
-      width: 120px;
-      height: 150px;
+      width: 5rem;
+      height: 5rem;
   }
 
   .btn {
-      font-size: 12px;
-      padding: 8px 15px;
+      font-size: 0.8em;
+      padding: .5rem .75rem;
   }
 }
+
+@media print {
+  #BtnDiv {
+      display: none;
+  }
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  footer {
+      padding: 15px;
+  }
+  footer h1 {
+      margin: 0 10px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+      padding: 10px;
+  }
+ 
+  footer h1 {
+      margin: 0 5px;
+      font-size: 12px;
+  }
+}
+
